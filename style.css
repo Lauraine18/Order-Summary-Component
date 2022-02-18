@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+:root{
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+--white: hsl(0,0%,100%);
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+h1{
+  font-size: 700; 
+  font-weight: bolder; 
+}
+p{
+    color:var(--desaturated-blue);
+}
+
+a{
+    color: var(--bright-blue);
+    font-weight: 700;
+    margin-left: 15%;
+    padding: 0;
+}
+
+span{
+    font-weight: 700;
+}
+
+
+.main-background{
+    background-color: var(--pale-blue);
+    display: grid;
+    place-content:center;
+    min-height: 100vh;
+    padding: 3rem 5vw;
+}
+
+.card{
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+   padding-bottom: 40px;
+}
+.dance-music{
+    border-radius: 15px;
+    
+}
+.content{
+    margin: 1.5rem 0;
+    display: grid;
+    place-content: center;
+    gap:1.5rem;
+    line-height: 22px;
+}
+.container{
+display: flex;
+flex-direction: column;
+gap:2rem;
+}
+
+.cost{
+  display: flex;
+  flex-direction: column;
+  gap:0.3rem;
+  margin-left:-3%;
+  
+
+}
+.credit-card{
+    display: grid;
+    place-content: center;
+    gap:1rem;
+}
+.process-payment{
+    background-color: var(--bright-blue);
+    width: 300px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    margin-left: 5%;
+  
+}
+.cash{
+    color: var(--white);
+    font-weight: bolder;
+    margin-left: 25%;
+    text-decoration:none;
+}
+
+
+
+.cancel-order{
+    font-weight: 700;
+    display: grid;
+   place-content: center;
+   gap: 1.5rem;
+}

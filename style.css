@@ -1,107 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600;700;900&display=swap");
 
-:root{
---pale-blue: hsl(225, 100%, 94%);
---bright-blue: hsl(245, 75%, 52%);
---very-pale-blue: hsl(225, 100%, 98%);
---desaturated-blue: hsl(224, 23%, 55%);
---dark-blue: hsl(223, 47%, 23%);
---white: hsl(0,0%,100%);
-}
-
-*{
-    margin:0;
-    padding:0;
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: hsl(0, 0%, 100%);
 }
 
-body{
-    font-family: 'Red Hat Display', sans-serif;
-    
-}
-h1{
-  font-size: 700; 
-  font-weight: bolder; 
-}
-p{
-    color:var(--desaturated-blue);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    color: var(--bright-blue);
-    font-weight: 700;
-    margin-left: 15%;
-    padding: 0;
+body {
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 22px;
 }
 
-span{
-    font-weight: 700;
+h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  color: var(--dark-blue);
 }
 
-
-.main-background{
-    background-color: var(--pale-blue);
-    display: grid;
-    place-content:center;
-    min-height: 100vh;
-    padding: 3rem 5vw;
+figure {
+  display: grid;
+  place-content: center;
 }
 
-.card{
-    background-color: var(--very-pale-blue);
-    border-radius: 15px;
-   padding-bottom: 40px;
-}
-.dance-music{
-    border-radius: 15px;
-    
-}
-.content{
-    margin: 1.5rem 0;
-    display: grid;
-    place-content: center;
-    gap:1.5rem;
-    line-height: 22px;
-}
-.container{
-display: flex;
-flex-direction: column;
-gap:2rem;
+img {
+  width: 100%;
 }
 
-.cost{
+p {
+  color: var(--desaturated-blue);
+  text-align: center;
+}
+
+a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-background {
+  background: url(./pattern-background-desktop.svg) no-repeat top;
+  background-size: 100% 24rem;
+  background-color: var(--pale-blue);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 3rem 5vw;
+}
+
+.card {
+  max-width: 25rem;
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+}
+
+.dance-music {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.content {
+  padding: 2.5rem 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.music-plan {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cost {
   display: flex;
   flex-direction: column;
-  gap:0.3rem;
-  margin-left:-3%;
-  
-
-}
-.credit-card{
-    display: grid;
-    place-content: center;
-    gap:1rem;
-}
-.process-payment{
-    background-color: var(--bright-blue);
-    width: 300px;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 15px;
-    margin-left: 5%;
-  
-}
-.cash{
-    color: var(--white);
-    font-weight: bolder;
-    margin-left: 25%;
-    text-decoration:none;
+  gap: 0.3rem;
 }
 
+.anual-plan {
+  font-weight: 900;
+  color: var(--dark-blue);
+}
 
+.button {
+  font-weight: bold;
+}
 
-.cancel-order{
-    font-weight: 700;
-    display: grid;
-   place-content: center;
-   gap: 1.5rem;
+.button--change {
+  margin-left: auto;
+  text-decoration: underline;
+  color: var(--bright-blue);
+}
+
+.button--cash {
+  margin-top: 1.5rem;
+  background-color: var(--bright-blue);
+  color: var(--white);
+  padding: 0.65rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.button--cancel-order {
+  margin: 0 auto;
 }
